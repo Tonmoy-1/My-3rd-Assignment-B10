@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My-3rd-Assignment-B10/</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- dasiui and tailwind css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              navbg:
+                "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);",
+            },
+            fontFamily: "Manrope",
+          },
+        },
+      };
+    </script>
+    <title>My-3rd-Assignment-B10/</title>
+  </head>
+
+  <body class="fontFamily">
+    <!-- header section start -->
+    <header>
+      <!-- nav start -->
+      <nav class="w-11/12 mx-auto px-5 bg-slate-100">
+        <div class="navbar">
+          <div class="navbar-start">
+            <!-- header logo -->
+            <div class="flex gap-3 items-center">
+              <i
+                class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black rounded-full -rotate-45 p-2"
+              ></i>
+              <a class="lg:text-3xl md:text-2xl font-bold">Rinterio</a>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="font-bold">Home</a></li>
+              <li><a class="font-bold">Services</a></li>
+              <li><a class="font-bold">Portfolio</a></li>
+              <li><a class="font-bold">Blogs</a></li>
+              <li><a class="font-bold">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- all btn start-->
+          <div class="navbar-end lg:flex gap-3 items-center md:flex hidden">
+            <div class="bg-gray-400 text-white px-2 py-1 rounded-full">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="bg-gray-400 text-white px-2 py-1 rounded-full">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <a class="btn bg-[#ABEF5F] rounded-full font-bold"
+              >Book Consult<i
+                class="fa-solid fa-arrow-right bg-black text-white rounded-full -rotate-45 p-2"
+              ></i
+            ></a>
+          </div>
+          <!-- all btn end -->
+
+          <!-- hambarger -->
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden md:hidden ml-24 bg-gray-50 rounded-full px-3 py-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- hamb end -->
+        </div>
+      </nav>
+      <!-- nav end -->
+
+      <!-- hero section start -->
+
+      <!-- hero section end -->
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main></main>
+    <!-- main section end -->
+
+    <!-- footer section start -->
+    <footer></footer>
+    <!--footersection end -->
+  </body>
 </html>
