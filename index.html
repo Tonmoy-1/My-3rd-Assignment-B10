@@ -33,9 +33,6 @@
             colors: {
               clifford: "#da373d",
             },
-            backgroundImage: {
-              formbg: "url('/img/bg.jpg')",
-            },
           },
         },
       };
@@ -59,12 +56,12 @@
             </div>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="menu menu-horizontal px-1 lg:text-lg text-sm">
               <li><a class="font-bold">Home</a></li>
-              <li><a class="font-bold">Services</a></li>
-              <li><a class="font-bold">Portfolio</a></li>
-              <li><a class="font-bold">Blogs</a></li>
-              <li><a class="font-bold">Contact Us</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
             </ul>
           </div>
           <!-- all btn start-->
@@ -147,69 +144,75 @@
     <!-- main section start -->
     <main>
       <!-- about us section start -->
-      <section class="w-11/12 mx-auto bg-slate-100">
-        <div class="lg:flex md:flex">
-          <!-- about content -->
-          <div class="lg:flex-1 lg:pl-24 lg:pt-12 ml-4 lg:ml-0 pt-3">
-            <div class="text-center lg:text-left">
-              <button
-                class="px-3 py-2 bg-white rounded-full font-bold items-center"
+      <section class="w-11/12 mx-auto bg-slate-100 lg:relative">
+        <div
+          class="lg:bg-[url('/image/Vector.png')] lg:bg-no-repeat lg:relative lg:left-12 lg:top-10"
+        >
+          <div class="lg:flex md:flex">
+            <!-- about content -->
+            <div class="lg:flex-1 lg:pl-24 lg:pt-12 ml-4 lg:ml-0 pt-3">
+              <div class="text-center lg:text-left">
+                <button
+                  class="px-3 py-2 bg-white rounded-full font-bold items-center"
+                >
+                  <i class="fa-solid fa-arrow-right text-black"></i> About Us
+                </button>
+              </div>
+
+              <h1
+                class="font-bold text-xl text-center lg:text-left lg:text-3xl my-4"
               >
-                <i class="fa-solid fa-arrow-right text-black"></i> About Us
-              </button>
-            </div>
-
-            <h1
-              class="font-bold text-xl text-center lg:text-left lg:text-3xl my-4"
-            >
-              We design thoughtful, liveable spaces
-            </h1>
-            <p class="lg:w-3/4 mb-5 text-center lg:text-left">
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood, sleek metal
-              accents.
-            </p>
-            <!-- about card section -->
-            <div
-              class="flex gap-4 p-4 rounded-lg shadow-lg mr-12 mb-5 items-center"
-            >
-              <div><img src="image/commercial.png" alt="" /></div>
-              <div>
-                <h1 class="font-bold lg:text-lg">Commercial</h1>
-                <p class="text-gray-500">
-                  The barn house captivates with its blend of rustic charm and
-                  modern.
-                </p>
+                We design thoughtful, liveable spaces
+              </h1>
+              <p class="lg:w-3/4 mb-5 text-center lg:text-left">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <!-- about card section -->
+              <div
+                class="flex gap-4 p-4 rounded-lg shadow-lg mr-12 mb-5 items-center"
+              >
+                <div>
+                  <img class="bg-cover" src="image/commercial.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="font-bold lg:text-lg">Commercial</h1>
+                  <p class="text-gray-500">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 p-4 rounded-lg shadow-lg mr-12 mb-5 items-center"
+              >
+                <div><img src="image/residential.png" alt="" /></div>
+                <div>
+                  <h1 class="font-bold lg:text-lg">Residential</h1>
+                  <p class="text-gray-500">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="flex gap-4 p-4 rounded-lg shadow-lg mr-12 mb-5 items-center"
-            >
-              <div><img src="image/residential.png" alt="" /></div>
-              <div>
-                <h1 class="font-bold lg:text-lg">Residential</h1>
-                <p class="text-gray-500">
-                  The barn house captivates with its blend of rustic charm and
-                  modern.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- about img section -->
-          <div class="lg:flex-1 flex items-center">
-            <img
-              class="p-5 lg:p-3 lg:mt-12 w-[380px] h-[360px] lg:w-[420px] lg:h-[400px] bg-cover rounded-none"
-              src="image/Rectangle.png"
-              alt=""
-            />
+            <!-- about img section -->
+            <div class="lg:flex-1 flex items-center">
+              <img
+                class="p-5 lg:p-3 lg:mt-12 w-[380px] h-[360px] lg:w-[420px] lg:h-[400px] bg-cover rounded-none"
+                src="image/Rectangle.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>
       <!-- about us section end -->
 
       <!-- how we work section start -->
-      <section class="w-11/12 mx-auto mb-12 bg-slate-100">
+      <section class="w-11/12 mx-auto mb-12 bg-slate-100 pt-12">
         <div class="text-center">
           <div class="flex flex-col items-center">
             <button
@@ -488,7 +491,7 @@
         </p>
         <div>
           <ul
-            class="gap-y-2 lg:flex justify-between w-4/5 mx-auto text-gray-400"
+            class="gap-y-2 lg:flex justify-between w-3/5 mx-auto text-gray-400 mb-2"
           >
             <li><a>Home</a></li>
             <li><a>Services</a></li>
